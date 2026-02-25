@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Carter | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for Alex Carter — product-minded full-stack developer building delightful digital experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="#home">Alex Carter</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Full-Stack Developer</p>
+            <h1>I design and build clean, user-first web experiences.</h1>
+            <p class="lead">
+              I’m Alex, a developer who blends engineering with product thinking to create digital experiences that feel intuitive and perform beautifully.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="#contact">Let’s Talk</a>
+            </div>
+          </div>
+          <aside class="hero-card">
+            <h2>Currently</h2>
+            <ul>
+              <li>Building performant React + Node applications</li>
+              <li>Improving design systems and accessibility</li>
+              <li>Exploring AI-powered UX workflows</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container narrow">
+          <h2>About Me</h2>
+          <p>
+            With 5+ years of experience across startups and agency teams, I specialize in shipping polished products end-to-end. From discovery and prototyping to implementation and optimization, I focus on outcomes that matter to users and business stakeholders.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="container">
+          <h2>Featured Projects</h2>
+          <div class="project-grid">
+            <article class="project-card">
+              <h3>FinTrack Dashboard</h3>
+              <p>
+                A data-rich financial planning dashboard with live charts, role-based access, and automated PDF exports.
+              </p>
+              <p class="stack">React • TypeScript • Node.js • PostgreSQL</p>
+            </article>
+            <article class="project-card">
+              <h3>Bookly Commerce</h3>
+              <p>
+                A headless storefront that improved checkout completion by 27% through UX and performance enhancements.
+              </p>
+              <p class="stack">Next.js • Stripe • Tailwind • Supabase</p>
+            </article>
+            <article class="project-card">
+              <h3>CareConnect Platform</h3>
+              <p>
+                A scheduling and communication platform for healthcare clinics with HIPAA-aware architecture patterns.
+              </p>
+              <p class="stack">Vue • Firebase • Cloud Functions</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="chips">
+            <li>JavaScript / TypeScript</li>
+            <li>React / Next.js</li>
+            <li>Node.js / Express</li>
+            <li>HTML / CSS / Accessibility</li>
+            <li>REST APIs / GraphQL</li>
+            <li>PostgreSQL / MongoDB</li>
+            <li>AWS / Vercel</li>
+            <li>Figma / Product Thinking</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container narrow">
+          <h2>Contact</h2>
+          <p>
+            Interested in collaborating? I’m available for full-time roles and freelance projects.
+          </p>
+          <a class="btn btn-primary" href="mailto:alex@example.com">alex@example.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Alex Carter. Built with intention.</p>
+      </div>
+    </footer>
+  </body>
+</html>
